@@ -110,3 +110,40 @@ form button:hover{
     opacity: 0;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+
+    color: #1d8a0e;
+    width: 17rem;
+    cursor: pointer; 
+    padding: 1.6rem;/* padding: 1rem;  */
+    font-size: 1.5rem;
+}
+
+.select {
+    
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #1d8a0e;
+    top: 0;
+    right: 0;
+    padding: 1.4rem;/* padding: 0.8rem; */
+    pointer-events: none;
+    transition: .3s ease;
+}
+
+.select:hover::after {
+    background: #fff;
+    color: #1d8a0e;
+}
